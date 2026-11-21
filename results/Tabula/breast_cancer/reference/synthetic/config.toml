@@ -1,0 +1,22 @@
+[io]
+real_dataset_input = 'datasets/breast_cancer/real/breast_cancer_train.csv'
+dataset_info = 'datasets/breast_cancer/info.toml'
+
+tracker_file_output_folder = 'results/Tabula/breast_cancer/reference/synthetic'
+results_output_model_folder = 'results/Tabula/breast_cancer/reference/synthetic/models'
+results_output_synthetic_folder = 'results/Tabula/breast_cancer/reference/synthetic/datasets'
+
+[exp]
+start_exp = 4
+
+# true, false
+save_models = false
+
+model = 'tabula'
+
+[exp_params]
+seeds = [42, 0, 1234]
+
+[model_hyperparameters]
+epochs = [300]
+batch_size = [4]

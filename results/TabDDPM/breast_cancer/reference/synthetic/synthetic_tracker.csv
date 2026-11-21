@@ -1,0 +1,4 @@
+exp_idx,n_iter,lr,weight_decay,batch_size,num_timesteps,dim_embed,train_time,generate_time,dataset_file,model_file
+1,1000,0.0001,0.0001,4,1000,128,408.6065139770508,2.1464593410491943,dataset_1.csv,model_1.pkl
+2,1000,0.0001,0.0001,4,1000,128,132.017982006073,0.8360979557037354,dataset_2.csv,
+3,1000,0.0001,0.0001,4,1000,128,132.04342770576477,1.3592915534973145,dataset_3.csv,

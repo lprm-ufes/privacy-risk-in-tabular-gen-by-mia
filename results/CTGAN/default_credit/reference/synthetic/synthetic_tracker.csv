@@ -1,0 +1,4 @@
+exp_idx,n_iter,lr,weight_decay,batch_size,generator_n_layers_hidden,generator_n_units_hidden,generator_nonlin,discriminator_n_layers_hidden,discriminator_n_units_hidden,discriminator_nonlin,train_time,generate_time,dataset_file,model_file
+1,1000,0.001,0.001,64,2,500,relu,2,500,leaky_relu,7028.018702983856,0.4014019966125488,dataset_1.csv,
+2,1000,0.001,0.001,64,2,500,relu,2,500,leaky_relu,3037.5926847457886,0.07717251777648926,dataset_2.csv,
+3,1000,0.001,0.001,64,2,500,relu,2,500,leaky_relu,3660.2634682655334,0.07853245735168457,dataset_3.csv,

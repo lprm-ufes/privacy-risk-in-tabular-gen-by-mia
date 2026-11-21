@@ -1,0 +1,24 @@
+[io]
+real_dataset_input = 'datasets/alabama_income/real/alabama_income_train.csv'
+dataset_info = 'datasets/alabama_income/info.toml'
+
+tracker_file_output_folder = 'results_domain_shift/TVAE/alabama_income/reference/synthetic'
+results_output_model_folder = 'results_domain_shift/TVAE/alabama_income/reference/synthetic/models'
+results_output_synthetic_folder = 'results_domain_shift/TVAE/alabama_income/reference/synthetic/datasets'
+
+[exp]
+start_exp = 1
+
+# true, false
+save_models = false
+
+model = 'tvae'
+
+[exp_params]
+seeds = [0, 42, 1234]
+
+[model_hyperparameters]
+n_iter = [1000]
+lr = [2e-4]
+weight_decay = [1e-3]
+batch_size = [64]

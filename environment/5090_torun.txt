@@ -1,0 +1,6 @@
+# 1. Create and activate environment
+conda env create -f environment/environment.yml
+conda activate SynthEnvironment
+
+# 2. Upgrade PyTorch to CUDA 12.8 for RTX 5090 Blackwell support
+pip install "torch==2.7.1+cu128" "torchvision==0.22.1+cu128" --index-url https://download.pytorch.org/whl/cu128

@@ -1,0 +1,37 @@
+[io]
+member_dataset_input = 'datasets/cidds/real/cidds_train.csv'
+non_member_dataset_input = 'datasets/cidds/reference/cidds_reference.csv'
+test_dataset_input = 'datasets/cidds/real/cidds_test.csv'
+dataset_info = 'datasets/cidds/info.toml'
+
+synthetic_tracker_file = 'results/Tabula/cidds/reference/synthetic/synthetic_tracker.csv'
+synthetic_datasets_folder = 'results/Tabula/cidds/reference/synthetic/datasets'
+results_output_folder = 'results/Tabula/cidds/reference/results'
+
+[exp]
+start_exp = 2
+save_scores = true
+plot = false
+remove_exps_folder = false
+
+run_attack = true
+run_utility = true
+run_fidelity = true
+run_adversarial_shift = true
+
+[flowmia_params]
+seed = 42
+use_wgan = true
+batch_size = 64
+fpr_rate = 0.1
+num_epochs = 200
+fcheckpoint = 100
+domias_epochs = 200
+domias_batch_size = 64
+
+[utility_params]
+rf_n_estimators = 100
+knn_n_neighbors = 5
+mlp_hidden_layer_sizes = [100]
+mlp_max_iter = 100
+mlp_batch_size = 64

@@ -1,0 +1,16 @@
+[split-info]
+all_col = ['srcip','dstip','srcport','dstport','proto','ts','td','pkt','byt','label']
+use_col = ['srcip','dstip','srcport','dstport','proto','ts','td','pkt','byt','label']
+
+[columns]
+ip_col = ['srcip', 'dstip']
+
+# num_col + cat_col + label = all dataset columns
+num_col = ['srcip', 'dstip', 'srcport', 'dstport', 'td', 'pkt', 'byt']
+cat_col = ['proto']
+label = 'label'
+
+[sizes]
+train = 18000
+test = 6000
+reference = 16000

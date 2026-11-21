@@ -1,0 +1,4 @@
+exp_idx,epochs,batch_size,train_time,generate_time,dataset_file,model_file
+1,300,4,1571.4073741436005,179.03350114822388,dataset_1.csv,
+2,300,4,1568.3249700069427,209.277086019516,dataset_2.csv,
+3,300,4,1567.9869463443756,189.77921533584595,dataset_3.csv,

@@ -1,0 +1,4 @@
+exp_idx,n_iter,lr,weight_decay,batch_size,train_time,generate_time,dataset_file,model_file
+1,1000,0.0002,0.001,4,858.5961530208588,0.562793493270874,dataset_1.csv,
+2,1000,0.0002,0.001,4,559.4853644371033,0.37270355224609375,dataset_2.csv,
+3,1000,0.0002,0.001,4,684.708193063736,0.363161563873291,dataset_3.csv,

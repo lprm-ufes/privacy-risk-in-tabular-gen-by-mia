@@ -1,0 +1,35 @@
+[io]
+real_dataset_input = 'datasets/breast_cancer/real/breast_cancer_train.csv'
+dataset_info = 'datasets/breast_cancer/info.toml'
+
+tracker_file_output_folder = 'results/CTGAN/breast_cancer/reference/synthetic'
+results_output_model_folder = 'results/CTGAN/breast_cancer/reference/synthetic/models'
+results_output_synthetic_folder = 'results/CTGAN/breast_cancer/reference/synthetic/datasets'
+
+[exp]
+start_exp = 2
+
+# true, false
+save_models = false
+
+model = 'ctgan'
+
+[exp_params]
+seeds = [42, 0, 1234]
+
+[model_hyperparameters]
+n_iter = [1000]
+lr = [1e-3]
+weight_decay = [1e-3]
+batch_size = [4]
+generator_n_layers_hidden = [2]
+generator_n_units_hidden = [500]
+
+# ["relu", "leaky_relu", "tanh", "elu"]
+generator_nonlin = ['relu']
+
+discriminator_n_layers_hidden = [2]
+discriminator_n_units_hidden = [500]
+
+# ["relu", "leaky_relu", "tanh", "elu"]
+discriminator_nonlin=['leaky_relu']

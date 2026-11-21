@@ -1,0 +1,17 @@
+name: SynthEnvironment
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - synthcity
+    - opacus<=1.4.1
+    - transformers<5.0.0
+    - toml
+    - torchdata
+    - dgl
+    - "datasets<3.0.0"
+    - "pyarrow<19"
+    - scikit-learn
+    - seaborn

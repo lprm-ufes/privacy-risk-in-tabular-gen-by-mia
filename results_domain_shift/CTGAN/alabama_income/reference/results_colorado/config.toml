@@ -1,0 +1,36 @@
+[io]
+member_dataset_input = 'datasets/alabama_income/real/alabama_income_train.csv'
+non_member_dataset_input = 'datasets/alabama_income/reference/colorado_income.csv'
+test_dataset_input = 'datasets/alabama_income/real/alabama_income_test.csv'
+dataset_info = 'datasets/alabama_income/info.toml'
+
+synthetic_tracker_file = 'results_domain_shift/CTGAN/alabama_income/reference/synthetic/synthetic_tracker.csv'
+synthetic_datasets_folder = 'results_domain_shift/CTGAN/alabama_income/reference/synthetic/datasets'
+results_output_folder = 'results_domain_shift/CTGAN/alabama_income/reference/results_colorado'
+
+[exp]
+start_exp = 1
+save_scores = true
+plot = false
+remove_exps_folder = false
+
+run_attack = true
+run_utility = false
+run_fidelity = false
+run_adversarial_shift = true
+
+[flowmia_params]
+seed = 42
+use_wgan = true
+batch_size = 64
+num_epochs = 200
+fcheckpoint = 100
+domias_epochs = 200
+domias_batch_size = 64
+
+[utility_params]
+rf_n_estimators = 100
+knn_n_neighbors = 5
+mlp_hidden_layer_sizes = [100]
+mlp_max_iter = 100
+mlp_batch_size = 512

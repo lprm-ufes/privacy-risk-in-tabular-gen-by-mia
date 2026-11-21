@@ -1,0 +1,1 @@
+from tabular_generative_models.tabula.tabula import Tabula

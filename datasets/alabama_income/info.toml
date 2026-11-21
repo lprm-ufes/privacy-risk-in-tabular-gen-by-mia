@@ -1,0 +1,13 @@
+[split-info]
+all_col = ['AGEP', 'COW', 'SCHL', 'MAR', 'OCCP', 'POBP', 'RELP', 'WKHP', 'SEX', 'RAC1P', 'PINCP']
+use_col = ['AGEP', 'COW', 'SCHL', 'MAR', 'OCCP', 'POBP', 'RELP', 'WKHP', 'SEX', 'RAC1P', 'PINCP']
+
+[columns]
+num_col = ['AGEP', 'WKHP']
+cat_col = ['COW', 'SCHL', 'MAR', 'OCCP', 'POBP', 'RELP', 'SEX', 'RAC1P']
+label = 'PINCP'
+
+[sizes]
+train = 10021
+test = 3340
+reference = 8907

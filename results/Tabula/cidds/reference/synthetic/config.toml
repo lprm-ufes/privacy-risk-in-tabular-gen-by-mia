@@ -1,0 +1,22 @@
+[io]
+real_dataset_input = 'datasets/cidds/real/cidds_train.csv'
+dataset_info = 'datasets/cidds/info.toml'
+
+tracker_file_output_folder = 'results/Tabula/cidds/reference/synthetic'
+results_output_model_folder = 'results/Tabula/cidds/reference/synthetic/models'
+results_output_synthetic_folder = 'results/Tabula/cidds/reference/synthetic/datasets'
+
+[exp]
+start_exp = 4
+
+# true, false
+save_models = false
+
+model = 'tabula'
+
+[exp_params]
+seeds = [42, 0, 1234]
+
+[model_hyperparameters]
+epochs = [300]
+batch_size = [32]
